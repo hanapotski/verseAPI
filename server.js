@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const Verses = require("./models/verse");
 const routes = require("./routes");
 const logger = require("morgan");
 
