@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const schema = require("./verseSchema");
 const uri = dbName => `mongodb://localhost:27017/${dbName}`;
 
-mongoose.connect(uri('hannah'), {useMongoClient: true});
+mongoose.connect(uri('randomverse'), {useMongoClient: true});
 
 mongoose.connection
   .once("open", () => console.info("+++Connected to mongodb"))
